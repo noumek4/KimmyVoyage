@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import roadTripImage from '../../assets/images/Slider-1.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -42,7 +41,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="about__image-modern"
           >
-            <img src={roadTripImage} alt="Road trip" />
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8df6?q=80&w=1200&auto=format&fit=crop" alt="Road trip" />
           </motion.div>
         </div>
       </section>

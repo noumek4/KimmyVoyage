@@ -1,30 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
-import sliderOne from '../../assets/images/Slider-1.jpg';
-import sliderTwo from '../../assets/images/Slider-2.jpg';
-import tourismeImage from '../../assets/images/Tourisme.jpg';
-import transfertImage from '../../assets/images/Transfert.jpg';
 import './Hero.css';
 
 const slides = [
   {
-    image: sliderOne,
+    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2000&auto=format&fit=crop',
     title: 'Explorez des horizons sans fin',
     subtitle: 'Des destinations paradisiaques vous attendent pour des moments inoubliables.'
   },
   {
-    image: sliderTwo,
+    image: 'https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?q=80&w=2000&auto=format&fit=crop',
     title: 'Le luxe au cœur du voyage',
     subtitle: 'Séjours prestigieux et services personnalisés pour les voyageurs exigeants.'
   },
   {
-    image: tourismeImage,
+    image: 'https://images.unsplash.com/photo-1493246507139-91e8bef99c02?q=80&w=2000&auto=format&fit=crop',
     title: 'Vivez l\'extraordinaire',
     subtitle: 'Chaque voyage est une histoire unique que nous écrivons ensemble.'
   },
   {
-    image: transfertImage,
+    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2000&auto=format&fit=crop',
     title: 'Aventure et Découverte',
     subtitle: 'Partez à la conquête des plus beaux paysages du monde.'
   }
