@@ -1,5 +1,5 @@
 .footer-modern {
-  background-color: #0f172a;
+  background-color: #082D34;
   color: white;
   padding: 100px 0 40px;
 }
@@ -17,7 +17,7 @@
 }
 
 .footer__brand-modern p {
-  color: #94a3b8;
+  color: #9AB6BB;
   font-size: 1rem;
   margin-bottom: 32px;
   max-width: 300px;
@@ -29,7 +29,7 @@
 }
 
 .social-link-text {
-  color: #94a3b8;
+  color: #9AB6BB;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
@@ -56,7 +56,7 @@
 }
 
 .footer__nav-modern a {
-  color: #94a3b8;
+  color: #9AB6BB;
   text-decoration: none;
   transition: var(--transition-smooth);
 }
@@ -67,7 +67,7 @@
 }
 
 .footer__newsletter-modern p {
-  color: #94a3b8;
+  color: #9AB6BB;
   margin-bottom: 24px;
 }
 
@@ -113,7 +113,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #64748b;
+  color: #7FA0A6;
   font-size: 0.9rem;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .footer__legal a {
-  color: #64748b;
+  color: #7FA0A6;
   text-decoration: none;
 }
 

@@ -1,5 +1,5 @@
 .header__topbar {
-  background-color: var(--primary-blue);
+  background: linear-gradient(90deg, #082D34, var(--primary-blue));
   color: white;
   padding: 10px 0;
   font-size: 0.8rem;
@@ -61,15 +61,16 @@
   width: 100%;
   z-index: 1000;
   padding: 20px 0;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.96);
   transition: var(--transition-smooth);
+  border-bottom: 1px solid rgba(15, 102, 114, 0.08);
 }
 
 .header.scrolled {
   padding: 12px 0;
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px -42px rgba(8, 45, 52, 0.6);
   border-bottom: 1px solid var(--glass-border);
 }
 

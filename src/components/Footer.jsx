@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Send } from 'lucide-react';
+import logoKimya from '../../assets/images/Logo-Kimya-Voyage.png';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer__grid-modern">
           <div className="footer__brand-modern">
             <img 
-              src="/assets/images/Logo-Kimya-Voyages.png" 
+              src={logoKimya} 
               alt="Kimya Voyages" 
               className="footer__logo-modern" 
               onError={(e) => {

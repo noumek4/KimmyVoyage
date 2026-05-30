@@ -1,11 +1,14 @@
 .hero-modern {
   height: 100vh;
+  min-height: 720px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   color: white;
   padding: 0;
+  isolation: isolate;
+  background: #082D34;
 }
 
 .hero__bg {
@@ -16,6 +19,8 @@
   height: 100%;
   background-size: cover;
   background-position: center;
+  transform: scale(1.06);
+  animation: cinematic-drift 12s ease-in-out forwards;
 }
 
 .hero__overlay-modern {
@@ -24,7 +29,34 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 74, 153, 0.7), rgba(0, 0, 0, 0.3));
+  background:
+    linear-gradient(90deg, rgba(8, 45, 52, 0.86) 0%, rgba(15, 102, 114, 0.64) 42%, rgba(5, 21, 24, 0.18) 100%),
+    linear-gradient(0deg, rgba(5, 21, 24, 0.72) 0%, transparent 35%, rgba(5, 21, 24, 0.28) 100%);
+}
+
+.hero-modern::before,
+.hero-modern::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.hero-modern::before {
+  top: 0;
+  height: 100%;
+  background:
+    radial-gradient(circle at 72% 35%, rgba(213, 154, 0, 0.18), transparent 34%),
+    linear-gradient(90deg, rgba(5, 21, 24, 0.44), transparent 28%, rgba(5, 21, 24, 0.32));
+  mix-blend-mode: soft-light;
+}
+
+.hero-modern::after {
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(0deg, var(--bg-page), transparent);
 }
 
 .hero__container-modern {
@@ -34,20 +66,24 @@
 
 .hero__content-modern {
   max-width: 800px;
+  padding-top: 30px;
 }
 
 .hero__content-modern h1 {
-  font-size: 5rem;
+  font-size: 5.7rem;
   color: white;
   margin-bottom: 24px;
-  line-height: 1;
+  line-height: 0.95;
+  max-width: 850px;
+  text-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
 }
 
 .hero__content-modern p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 48px;
-  opacity: 0.9;
-  max-width: 550px;
+  opacity: 0.92;
+  max-width: 590px;
+  text-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .hero__btns-modern {
@@ -67,14 +103,37 @@
   color: var(--primary-blue);
 }
 
+.hero__signature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 56px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero__signature span:nth-child(2) {
+  width: 72px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-orange), rgba(255, 255, 255, 0.16));
+}
+
 .hero__controls {
   position: absolute;
-  bottom: 50px;
+  bottom: 54px;
   right: 50px;
   z-index: 20;
   display: flex;
   align-items: center;
   gap: 30px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(8, 45, 52, 0.28);
+  backdrop-filter: blur(18px);
 }
 
 .control-btn {
@@ -117,13 +176,38 @@
   border-radius: 5px;
 }
 
+@keyframes cinematic-drift {
+  from {
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg {
+    animation: none;
+  }
+}
+
 @media (max-width: 992px) {
+  .hero-modern {
+    min-height: 680px;
+  }
   .hero__content-modern h1 {
     font-size: 3.5rem;
+  }
+  .hero__controls {
+    right: 32px;
+    bottom: 36px;
   }
 }
 
 @media (max-width: 576px) {
+  .hero-modern {
+    min-height: 720px;
+  }
   .hero__content-modern h1 {
     font-size: 2.8rem;
   }
@@ -133,5 +217,13 @@
   .hero__controls {
     right: 50%;
     transform: translateX(50%);
+    gap: 18px;
+  }
+  .control-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .hero__signature {
+    margin-top: 38px;
   }
 }

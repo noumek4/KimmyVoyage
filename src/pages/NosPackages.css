@@ -28,7 +28,7 @@
 
 .dest-card-modern:hover {
   transform: scale(1.02);
-  box-shadow: 0 40px 80px -20px rgba(0, 74, 153, 0.2);
+  box-shadow: 0 40px 80px -20px rgba(15, 102, 114, 0.22);
 }
 
 .dest-card__image {
@@ -76,7 +76,7 @@
   border-radius: 12px;
   font-weight: 800;
   font-size: 1rem;
-  box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(213, 154, 0, 0.3);
 }
 
 .dest-card__content-modern {

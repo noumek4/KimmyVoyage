@@ -68,6 +68,11 @@ const Hero = () => {
             <a href="/nos-packages" className="btn btn-primary">Voir nos offres</a>
             <a href="/contact" className="btn btn-outline-white-modern">Nous contacter</a>
           </div>
+          <div className="hero__signature">
+            <span>{String(current + 1).padStart(2, '0')}</span>
+            <span></span>
+            <span>Voyage sur mesure</span>
+          </div>
         </motion.div>
       </div>
 

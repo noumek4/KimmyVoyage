@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, MessageSquare, Sun, Moon, Share2, Mail, MapPin } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import logoKimya from '../../assets/images/Logo-Kimya-Voyage.png';
 import './Header.css';
 
 const Header = () => {
@@ -40,7 +41,7 @@ const Header = () => {
         <div className="container header__wrapper">
           <Link to="/" className="header__logo">
             <img 
-              src="/assets/images/Logo-Kimya-Voyages.png" 
+              src={logoKimya} 
               alt="Kimya Voyages" 
               onError={(e) => {
                 e.target.src = 'https://kimyavoyages.com/wp-content/uploads/2024/03/Logo-Kimya-Voyages.png';
