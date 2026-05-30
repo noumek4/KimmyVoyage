@@ -1,0 +1,162 @@
+.contact-page-modern {
+  background-color: var(--white);
+}
+
+.contact-hero-modern {
+  padding-top: 200px;
+  padding-bottom: 80px;
+  background-color: var(--bg-light);
+}
+
+.contact-grid-modern {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  margin-top: -60px;
+}
+
+.contact-cards-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-card-modern {
+  background: white;
+  padding: 40px;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-modern);
+  border: 1px solid rgba(0, 74, 153, 0.05);
+  transition: var(--transition-smooth);
+}
+
+.contact-card-modern:hover {
+  transform: translateX(10px);
+  border-color: var(--primary-blue);
+}
+
+.card-icon-modern {
+  width: 56px;
+  height: 56px;
+  background: var(--bg-light);
+  color: var(--primary-blue);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.contact-card-modern h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.contact-card-modern p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.contact-form-card-modern {
+  background: white;
+  padding: 60px;
+  border-radius: var(--border-radius-xl);
+  box-shadow: 0 40px 80px -20px rgba(0, 74, 153, 0.15);
+  border: 1px solid rgba(0, 74, 153, 0.05);
+}
+
+.form-grid-modern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group-modern {
+  margin-bottom: 32px;
+}
+
+.form-group-modern label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group-modern input, 
+.form-group-modern textarea {
+  width: 100%;
+  padding: 18px;
+  background: var(--bg-light);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.form-group-modern input:focus, 
+.form-group-modern textarea:focus {
+  outline: none;
+  background: white;
+  border-color: var(--primary-blue);
+  box-shadow: 0 10px 20px rgba(0, 74, 153, 0.05);
+}
+
+.w-full-modern {
+  width: 100%;
+}
+
+.whatsapp-banner-modern {
+  padding-bottom: 120px;
+}
+
+.whatsapp-box-modern {
+  background: var(--primary-blue);
+  color: white;
+  padding: 60px;
+  border-radius: var(--border-radius-xl);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 40px 80px -20px rgba(0, 74, 153, 0.4);
+}
+
+.whatsapp-box-modern svg {
+  color: var(--accent-orange);
+}
+
+.whatsapp-box-modern h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.whatsapp-box-modern p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .contact-grid-modern {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .whatsapp-box-modern {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-grid-modern {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-card-modern {
+    padding: 30px;
+  }
+}

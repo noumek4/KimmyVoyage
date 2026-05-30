@@ -1,0 +1,147 @@
+.agency-page-modern {
+  background-color: var(--white);
+}
+
+.agency-hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--bg-light);
+  padding-top: 100px;
+}
+
+.modern-h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.agency-hero__content p {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.story__image {
+  position: relative;
+}
+
+.story__image img {
+  width: 100%;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-modern);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--primary-blue);
+  color: white;
+  padding: 30px;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 74, 153, 0.3);
+}
+
+.experience-badge .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.experience-badge .text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.story__content h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.story__content p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature-item-modern {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.feature-item-modern svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-blue { color: var(--primary-blue); }
+.icon-orange { color: var(--accent-orange); }
+
+.feature-item-modern h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.stats-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.stat-card-modern {
+  background: var(--bg-light);
+  padding: 60px 40px;
+  border-radius: var(--border-radius-xl);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.stat-card-modern:hover {
+  background: white;
+  box-shadow: var(--shadow-modern);
+  transform: translateY(-10px);
+}
+
+.stat-card-modern svg {
+  width: 48px;
+  height: 48px;
+  color: var(--accent-orange);
+  margin-bottom: 20px;
+}
+
+.stat-card-modern h3 {
+  font-size: 3.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .stats-grid-modern {
+    grid-template-columns: 1fr;
+  }
+  .modern-h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,135 @@
+.footer-modern {
+  background-color: #0f172a;
+  color: white;
+  padding: 100px 0 40px;
+}
+
+.footer__grid-modern {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+.footer__logo-modern {
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.footer__brand-modern p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+.footer__socials-modern {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link-text {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.social-link-text:hover {
+  color: var(--accent-orange);
+}
+
+.footer__nav-modern h4,
+.footer__newsletter-modern h4 {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.footer__nav-modern ul {
+  list-style: none;
+}
+
+.footer__nav-modern li {
+  margin-bottom: 16px;
+}
+
+.footer__nav-modern a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer__nav-modern a:hover {
+  color: var(--accent-orange);
+  padding-left: 10px;
+}
+
+.footer__newsletter-modern p {
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0 16px;
+  outline: none;
+}
+
+.btn-send {
+  background: var(--accent-orange);
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-send:hover {
+  transform: scale(1.05);
+}
+
+.footer__bottom-modern {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__legal a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .footer__grid-modern {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
