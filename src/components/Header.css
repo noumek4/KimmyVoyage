@@ -90,10 +90,6 @@
   transition: var(--transition-smooth);
 }
 
-.dark .header__logo img {
-  filter: brightness(0) invert(1);
-}
-
 .header.scrolled .header__logo img {
   height: 40px;
 }
