@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Star, ArrowRight } from 'lucide-react';
+import billetImage from '../../assets/images/Billet-avion.jpg';
+import hotelImage from '../../assets/images/Hotel.jpg';
+import sliderOne from '../../assets/images/Slider-1.jpg';
+import sliderTwo from '../../assets/images/Slider-2.jpg';
+import tourismeImage from '../../assets/images/Tourisme.jpg';
+import transfertImage from '../../assets/images/Transfert.jpg';
 import './NosPackages.css';
 
 const destinations = [
@@ -11,7 +17,7 @@ const destinations = [
     duration: '7 Jours / 6 Nuits',
     price: '1 200 000 FCFA',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=800&auto=format&fit=crop',
+    image: sliderOne,
     category: 'Luxe'
   },
   {
@@ -21,7 +27,7 @@ const destinations = [
     duration: '8 Jours / 7 Nuits',
     price: '950 000 FCFA',
     rating: '4.8',
-    image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=800&auto=format&fit=crop',
+    image: tourismeImage,
     category: 'Aventure'
   },
   {
@@ -31,7 +37,7 @@ const destinations = [
     duration: '6 Jours / 5 Nuits',
     price: '1 500 000 FCFA',
     rating: '5.0',
-    image: 'https://images.unsplash.com/photo-1502602898657-3e9172f29f78?q=80&w=800&auto=format&fit=crop',
+    image: sliderTwo,
     category: 'Détente'
   },
   {
@@ -41,7 +47,7 @@ const destinations = [
     duration: '10 Jours / 9 Nuits',
     price: '1 800 000 FCFA',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800&auto=format&fit=crop',
+    image: hotelImage,
     category: 'Culture'
   },
   {
@@ -51,7 +57,7 @@ const destinations = [
     duration: '7 Jours / 6 Nuits',
     price: '1 350 000 FCFA',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=800&auto=format&fit=crop',
+    image: transfertImage,
     category: 'Romance'
   },
   {
@@ -61,7 +67,7 @@ const destinations = [
     duration: '12 Jours / 11 Nuits',
     price: '2 100 000 FCFA',
     rating: '4.8',
-    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=800&auto=format&fit=crop',
+    image: billetImage,
     category: 'Découverte'
   },
   {
@@ -71,7 +77,7 @@ const destinations = [
     duration: '8 Jours / 7 Nuits',
     price: '1 950 000 FCFA',
     rating: '4.7',
-    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=800&auto=format&fit=crop',
+    image: sliderOne,
     category: 'Urbain'
   },
   {
@@ -81,7 +87,7 @@ const destinations = [
     duration: '9 Jours / 8 Nuits',
     price: '1 100 000 FCFA',
     rating: '4.9',
-    image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=800&auto=format&fit=crop',
+    image: tourismeImage,
     category: 'Safari'
   }
 ];

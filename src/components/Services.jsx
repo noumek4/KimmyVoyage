@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Plane, Hotel, Car, Globe, ArrowUpRight, ShieldCheck, Zap } from 'lucide-react';
+import billetImage from '../../assets/images/Billet-avion.jpg';
+import hotelImage from '../../assets/images/Hotel.jpg';
+import transfertImage from '../../assets/images/Transfert.jpg';
+import tourismeImage from '../../assets/images/Tourisme.jpg';
+import sliderOne from '../../assets/images/Slider-1.jpg';
+import sliderTwo from '../../assets/images/Slider-2.jpg';
 import './Services.css';
 
 const services = [
@@ -8,42 +14,42 @@ const services = [
     title: "Vols & Billetterie",
     description: "Des tarifs compétitifs pour toutes vos destinations préférées.",
     icon: <Plane size={32} />,
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop',
+    image: billetImage,
     color: '#0F6672'
   },
   {
     title: "Hébergements",
     description: "Hôtels de luxe et villas privées sélectionnés avec soin.",
     icon: <Hotel size={32} />,
-    image: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=800&auto=format&fit=crop',
+    image: hotelImage,
     color: '#D59A00'
   },
   {
     title: "Transferts VIP",
     description: "Déplacez-vous en toute sérénité avec nos chauffeurs privés.",
     icon: <Car size={32} />,
-    image: 'https://images.unsplash.com/photo-1549463599-2d5563a94833?q=80&w=800&auto=format&fit=crop',
+    image: transfertImage,
     color: '#0F6672'
   },
   {
     title: "Expériences",
     description: "Découvrez le monde à travers des activités uniques.",
     icon: <Globe size={32} />,
-    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800&auto=format&fit=crop',
+    image: tourismeImage,
     color: '#D59A00'
   },
   {
     title: "Assurance Voyage",
     description: "Partez l'esprit tranquille avec nos couvertures complètes.",
     icon: <ShieldCheck size={32} />,
-    image: 'https://images.unsplash.com/photo-1454165833767-d396b49c324b?q=80&w=800&auto=format&fit=crop',
+    image: sliderTwo,
     color: '#0F6672'
   },
   {
     title: "Visa Express",
     description: "Assistance rapide pour toutes vos démarches administratives.",
     icon: <Zap size={32} />,
-    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop',
+    image: sliderOne,
     color: '#D59A00'
   }
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Award, Users2, Rocket } from 'lucide-react';
+import travelersImage from '../../assets/images/Tourisme.jpg';
 import './NotreAgence.css';
 
 const NotreAgence = () => {
@@ -30,7 +31,7 @@ const NotreAgence = () => {
             viewport={{ once: true }}
             className="story__image"
           >
-            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1200&auto=format&fit=crop" alt="Travelers" />
+            <img src={travelersImage} alt="Travelers" />
             <div className="experience-badge">
               <span className="number">10+</span>
               <span className="text">Ans d'Expertise</span>
