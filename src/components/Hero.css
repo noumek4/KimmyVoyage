@@ -65,8 +65,10 @@
 }
 
 .hero__content-modern {
-  max-width: 800px;
+  max-width: 900px;
   padding-top: 30px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .hero__content-modern h1 {
@@ -74,7 +76,6 @@
   color: white;
   margin-bottom: 24px;
   line-height: 0.95;
-  max-width: 850px;
   text-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
 }
 
@@ -82,13 +83,16 @@
   font-size: 1.25rem;
   margin-bottom: 48px;
   opacity: 0.92;
-  max-width: 590px;
+  max-width: 650px;
   text-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__btns-modern {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .btn-outline-white-modern {
@@ -106,6 +110,7 @@
 .hero__signature {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   margin-top: 56px;
   color: rgba(255, 255, 255, 0.76);

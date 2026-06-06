@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MessageSquare, Sun, Moon, Share2, Mail, MapPin } from 'lucide-react';
+import { Phone, MessageSquare, Sun, Moon, Mail, Globe, Share2, Users, ArrowUpRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import logoKimya from '../../assets/images/Logo-Kimya-Voyage.png';
 import './Header.css';
@@ -22,14 +22,14 @@ const Header = () => {
       <div className="header__topbar">
         <div className="container topbar__wrapper">
           <div className="topbar__contact">
-            <a href="tel:+2252721794804"><Phone size={14} /> +225 27 21 79 48 04</a>
             <a href="tel:+2250787141312"><Phone size={14} /> +225 07 87 14 13 12</a>
             <a href="mailto:info@kimyavoyages.com"><Mail size={14} /> info@kimyavoyages.com</a>
           </div>
           <div className="topbar__socials">
-            <a href="#"><Share2 size={14} /></a>
-            <a href="#"><Share2 size={14} /></a>
-            <a href="#"><Share2 size={14} /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Share2 size={14} /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Globe size={14} /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Users size={14} /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><ArrowUpRight size={14} /></a>
             <button onClick={toggleTheme} className="theme-toggle-mini">
               {isDarkMode ? <Sun size={14} /> : <Moon size={14} />}
             </button>

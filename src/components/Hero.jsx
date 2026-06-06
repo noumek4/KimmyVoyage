@@ -5,24 +5,24 @@ import './Hero.css';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2000&auto=format&fit=crop',
-    title: 'Explorez des horizons sans fin',
-    subtitle: 'Des destinations paradisiaques vous attendent pour des moments inoubliables.'
+    image: './assets/images/slide1.jpg',
+    title: 'Chaque voyage mérite une bonne organisation',
+    subtitle: 'Des professionnels du voyage engagés pour transformer vos rêves en réalité.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?q=80&w=2000&auto=format&fit=crop',
+    image: './assets/images/slide2.jpg',
     title: 'Le luxe au cœur du voyage',
     subtitle: 'Séjours prestigieux et services personnalisés pour les voyageurs exigeants.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1493246507139-91e8bef99c02?q=80&w=2000&auto=format&fit=crop',
-    title: 'Vivez l\'extraordinaire',
-    subtitle: 'Chaque voyage est une histoire unique que nous écrivons ensemble.'
+    image: './assets/images/slide3.jpg',
+    title: 'Explorez des horizons sans fin',
+    subtitle: 'Des destinations paradisiaques vous attendent pour des moments inoubliables.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2000&auto=format&fit=crop',
-    title: 'Aventure et Découverte',
-    subtitle: 'Partez à la conquête des plus beaux paysages du monde.'
+    image: './assets/images/slide4.jpg',
+    title: 'Vivez l\'extraordinaire',
+    subtitle: 'Découvrez les trésors cachés du monde avec une attention méticuleuse aux détails.'
   }
 ];
 
@@ -56,8 +56,8 @@ const Hero = () => {
       <div className="container hero__container-modern">
         <motion.div
           key={current + '-content'}
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="hero__content-modern"
         >
