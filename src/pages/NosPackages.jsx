@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Star, ArrowRight, MessageSquare } from 'lucide-react';
 import './NosPackages.css';
@@ -130,9 +131,9 @@ const NosPackages = () => {
                       <Star size={16} fill="var(--accent-orange)" color="var(--accent-orange)" />
                       <span>{dest.rating}</span>
                     </div>
-                    <a href="https://wa.me/2250787141312" className="explore-link">
+                    <Link to="/contact" className="explore-link">
                       Réserver <ArrowRight size={18} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
