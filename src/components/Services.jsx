@@ -5,45 +5,45 @@ import './Services.css';
 
 const services = [
   {
-    title: "Vols & Billetterie",
-    description: "Des tarifs compétitifs pour toutes vos destinations préférées.",
+    title: "Billet d'avion",
+    description: "KIMYA Voyages facilite votre voyage dès le premier instant en émettant vos billets d’avion avec des tarifs compétitifs.",
     icon: <Plane size={32} />,
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop',
+    image: './assets/images/billet.jpg',
     color: '#0F6672'
   },
   {
-    title: "Hébergements",
-    description: "Hôtels de luxe et villas privées sélectionnés avec soin.",
+    title: "Hôtel",
+    description: "Profitez d’un séjour confortable et relaxant avec nos réservations de chambres d’hôtels adaptées à votre budget.",
     icon: <Hotel size={32} />,
-    image: 'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=800&auto=format&fit=crop',
+    image: './assets/images/hotel.jpg',
     color: '#D59A00'
   },
   {
-    title: "Transferts VIP",
-    description: "Déplacez-vous en toute sérénité avec nos chauffeurs privés.",
+    title: "Transferts",
+    description: "Soyez assuré d’un transport sans tracas avec nos services de transferts et de location de véhicules avec chauffeurs professionnels.",
     icon: <Car size={32} />,
-    image: 'https://images.unsplash.com/photo-1549463599-2d5563a94833?q=80&w=800&auto=format&fit=crop',
+    image: './assets/images/transfert.png',
     color: '#0F6672'
   },
   {
-    title: "Expériences",
-    description: "Découvrez le monde à travers des activités uniques.",
+    title: "Tourisme",
+    description: "Découvrez les merveilles du monde grâce à nos circuits touristiques soigneusement organisés et immersifs.",
     icon: <Globe size={32} />,
-    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800&auto=format&fit=crop',
+    image: './assets/images/tour1.jpg',
     color: '#D59A00'
+  },
+  {
+    title: "Visa",
+    description: "Assistance complète pour vos démarches de visa (Dubaï, Schengen, Turquie, Chine, USA et plus encore).",
+    icon: <Zap size={32} />,
+    image: './assets/images/visa.jpg',
+    color: '#0F6672'
   },
   {
     title: "Assurance Voyage",
-    description: "Partez l'esprit tranquille avec nos couvertures complètes.",
+    description: "Notre assurance voyages couvre vos périples dans le monde entier, vous offrant une protection complète.",
     icon: <ShieldCheck size={32} />,
-    image: 'https://images.unsplash.com/photo-1454165833767-d396b49c324b?q=80&w=800&auto=format&fit=crop',
-    color: '#0F6672'
-  },
-  {
-    title: "Visa Express",
-    description: "Assistance rapide pour toutes vos démarches administratives.",
-    icon: <Zap size={32} />,
-    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop',
+    image: './assets/images/assurance.jpg',
     color: '#D59A00'
   }
 ];
@@ -57,7 +57,7 @@ const Services = () => {
             <span className="hero__tag">Nos Services</span>
             <h2 className="modern-h2">Solutions de Voyage <span className="gradient-text">Premium</span></h2>
           </div>
-          <p className="modern-p">Nous concevons des expériences sur mesure qui surpassent vos attentes.</p>
+          <p className="modern-p">Plongez dans l’aventure avec KIMYA Voyages, où chaque service vous promet une expérience de voyage inoubliable. Faites juste vos bagages, on s'occupe du reste.</p>
         </div>
 
         <div className="services__grid-modern">
@@ -80,7 +80,7 @@ const Services = () => {
               <div className="service-card__content-modern">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <a href="/contact" className="service-card__link-modern">
+                <a href="/nos-packages" className="service-card__link-modern">
                   Explorer <ArrowUpRight size={18} />
                 </a>
               </div>

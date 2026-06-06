@@ -127,3 +127,81 @@ section {
 .dark .hero__tag {
   background: rgba(213, 154, 0, 0.12);
 }
+
+/* Dark Mode - Text on sections that stay white */
+.dark .home-page-modern,
+.dark .agency-page-modern,
+.dark .partners-modern,
+.dark .contact-page-modern {
+  color: #082D34;
+}
+
+.dark .home-page-modern h1, 
+.dark .home-page-modern h2, 
+.dark .home-page-modern h3,
+.dark .agency-page-modern h1, 
+.dark .agency-page-modern h2, 
+.dark .agency-page-modern h3,
+.dark .contact-page-modern h1,
+.dark .contact-page-modern h2,
+.dark .contact-page-modern h3 {
+  color: #082D34;
+}
+
+.dark .home-page-modern p,
+.dark .agency-page-modern p,
+.dark .contact-page-modern p {
+  color: rgba(8, 45, 52, 0.8);
+}
+
+/* Institutional Partners Shared Styles */
+.institutional-partners-modern {
+  padding: 80px 0;
+  background: var(--bg-light);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.partners__grid-small-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.partner-logo-small {
+  max-width: 120px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: var(--transition-smooth);
+}
+
+.partner-logo-small:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.partner-logo-small img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .partners__grid-small-modern {
+    gap: 40px;
+  }
+  .partner-logo-small {
+    max-width: 100px;
+  }
+}
