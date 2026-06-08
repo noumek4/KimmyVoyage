@@ -158,13 +158,13 @@ const Contact = () => {
           </div>
           <div className="partners__grid-small-modern">
             <div className="partner-logo-small">
-              <img src="./assets/others/IATA_idhsFWZqbC_0.png" alt="IATA" />
+              <img src="/assets/others/IATA_idhsFWZqbC_0.png" alt="IATA" />
             </div>
             <div className="partner-logo-small">
-              <img src="./assets/others/Amadeus_IT_Group-Logo.wine.svg" alt="Amadeus" />
+              <img src="/assets/others/Amadeus_IT_Group-Logo.wine.svg" alt="Amadeus" />
             </div>
             <div className="partner-logo-small">
-              <img src="./assets/others/galileo-travelport-seeklogo.png" alt="Galileo" />
+              <img src="/assets/others/galileo-travelport-seeklogo.png" alt="Galileo" />
             </div>
           </div>
         </div>

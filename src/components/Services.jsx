@@ -8,42 +8,42 @@ const services = [
     title: "Billet d'avion",
     description: "KIMYA Voyages facilite votre voyage dès le premier instant en émettant vos billets d’avion avec des tarifs compétitifs.",
     icon: <Plane size={32} />,
-    image: './assets/images/billet.jpg',
+    image: '/assets/images/billet.jpg',
     color: '#0F6672'
   },
   {
     title: "Hôtel",
     description: "Profitez d’un séjour confortable et relaxant avec nos réservations de chambres d’hôtels adaptées à votre budget.",
     icon: <Hotel size={32} />,
-    image: './assets/images/hotel.jpg',
+    image: '/assets/images/hotel.jpg',
     color: '#D59A00'
   },
   {
     title: "Transferts",
     description: "Soyez assuré d’un transport sans tracas avec nos services de transferts et de location de véhicules avec chauffeurs professionnels.",
     icon: <Car size={32} />,
-    image: './assets/images/transfert.png',
+    image: '/assets/images/transfert.png',
     color: '#0F6672'
   },
   {
     title: "Tourisme",
     description: "Découvrez les merveilles du monde grâce à nos circuits touristiques soigneusement organisés et immersifs.",
     icon: <Globe size={32} />,
-    image: './assets/images/tour1.jpg',
+    image: '/assets/images/tour1.jpg',
     color: '#D59A00'
   },
   {
     title: "Visa",
     description: "Assistance complète pour vos démarches de visa (Dubaï, Schengen, Turquie, Chine, USA et plus encore).",
     icon: <Zap size={32} />,
-    image: './assets/images/visa.jpg',
+    image: '/assets/images/visa.jpg',
     color: '#0F6672'
   },
   {
     title: "Assurance Voyage",
     description: "Notre assurance voyages couvre vos périples dans le monde entier, vous offrant une protection complète.",
     icon: <ShieldCheck size={32} />,
-    image: './assets/images/assurance.jpg',
+    image: '/assets/images/assurance.jpg',
     color: '#D59A00'
   }
 ];

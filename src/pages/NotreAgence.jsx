@@ -45,7 +45,7 @@ const NotreAgence = () => {
             viewport={{ once: true }}
             className="story__image"
           >
-            <img src="./assets/images/assurance.jpg" alt="Travelers" />
+            <img src="/assets/images/assurance.jpg" alt="Travelers" />
             <div className="experience-badge">
               <span className="number">Expertise</span>
               <span className="text">Dédiée</span>
@@ -125,13 +125,13 @@ const NotreAgence = () => {
           </div>
           <div className="partners__grid-small-modern">
             <div className="partner-logo-small">
-              <img src="./assets/others/IATA_idhsFWZqbC_0.png" alt="IATA" />
+              <img src="/assets/others/IATA_idhsFWZqbC_0.png" alt="IATA" />
             </div>
             <div className="partner-logo-small">
-              <img src="./assets/others/Amadeus_IT_Group-Logo.wine.svg" alt="Amadeus" />
+              <img src="/assets/others/Amadeus_IT_Group-Logo.wine.svg" alt="Amadeus" />
             </div>
             <div className="partner-logo-small">
-              <img src="./assets/others/galileo-travelport-seeklogo.png" alt="Galileo" />
+              <img src="/assets/others/galileo-travelport-seeklogo.png" alt="Galileo" />
             </div>
           </div>
         </div>

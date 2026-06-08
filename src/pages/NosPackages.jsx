@@ -12,7 +12,7 @@ const destinations = [
     duration: '7 Jours / 6 Nuits',
     price: '1 200 000 FCFA',
     rating: '4.9',
-    image: '../../assets/images/Dubaï.jpg',
+    image: '/assets/images/Dubaï.jpg',
     category: 'Luxe'
   },
   {
@@ -22,7 +22,7 @@ const destinations = [
     duration: '8 Jours / 7 Nuits',
     price: '950 000 FCFA',
     rating: '4.8',
-    image: '../../assets/images/4.jpg',
+    image: '/assets/images/4.jpg',
     category: 'Aventure'
   },
   {
@@ -32,7 +32,7 @@ const destinations = [
     duration: '6 Jours / 5 Nuits',
     price: '1 500 000 FCFA',
     rating: '5.0',
-    image: '../../assets/images/8.jpg',
+    image: '/assets/images/8.jpg',
     category: 'Détente'
   },
   {
@@ -42,7 +42,7 @@ const destinations = [
     duration: '10 Jours / 9 Nuits',
     price: '1 800 000 FCFA',
     rating: '4.9',
-    image: '../../assets/images/7.jpg',
+    image: '/assets/images/7.jpg',
     category: 'Culture'
   },
   {
@@ -52,7 +52,7 @@ const destinations = [
     duration: '7 Jours / 6 Nuits',
     price: '1 350 000 FCFA',
     rating: '4.9',
-    image: '../../assets/images/3.jpg',
+    image: '/assets/images/3.jpg',
     category: 'Romance'
   },
   {
@@ -62,7 +62,7 @@ const destinations = [
     duration: '12 Jours / 11 Nuits',
     price: '2 100 000 FCFA',
     rating: '4.8',
-    image: '../../assets/images/9.jpg',
+    image: '/assets/images/9.jpg',
     category: 'Découverte'
   },
   {
@@ -72,7 +72,7 @@ const destinations = [
     duration: '8 Jours / 7 Nuits',
     price: '1 950 000 FCFA',
     rating: '4.7',
-    image: '../../assets/images/slide3.jpg',
+    image: '/assets/images/slide3.jpg',
     category: 'Urbain'
   },
   {
@@ -82,7 +82,7 @@ const destinations = [
     duration: '9 Jours / 8 Nuits',
     price: '1 100 000 FCFA',
     rating: '4.9',
-    image: '../../assets/images/2.jpg',
+    image: '/assets/images/2.jpg',
     category: 'Safari'
   }
 ];
