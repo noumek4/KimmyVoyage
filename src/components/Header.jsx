@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, MessageSquare, Sun, Moon, Mail, Globe, Share2, Users, ArrowUpRight } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import logoKimya from '../../assets/images/Logo-Kimya-Voyage.png';
 import './Header.css';
+
+const logoKimya = '/assets/images/Logo-Kimya-Voyage.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);

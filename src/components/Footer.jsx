@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Send } from 'lucide-react';
-import logoKimya from '../../assets/images/Logo-Kimya-Voyage.png';
+
+const logoKimya = '/assets/images/Logo-Kimya-Voyage.png';
 
 const Footer = () => {
   return (

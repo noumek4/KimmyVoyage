@@ -5,22 +5,22 @@ import './Hero.css';
 
 const slides = [
   {
-    image: './assets/images/slide1.jpg',
+    image: '/assets/images/slide1.jpg',
     title: 'Chaque voyage mérite une bonne organisation',
     subtitle: 'Des professionnels du voyage engagés pour transformer vos rêves en réalité.'
   },
   {
-    image: './assets/images/slide2.jpg',
+    image: '/assets/images/slide2.jpg',
     title: 'Le luxe au cœur du voyage',
     subtitle: 'Séjours prestigieux et services personnalisés pour les voyageurs exigeants.'
   },
   {
-    image: './assets/images/slide3.jpg',
+    image: '/assets/images/slide3.jpg',
     title: 'Explorez des horizons sans fin',
     subtitle: 'Des destinations paradisiaques vous attendent pour des moments inoubliables.'
   },
   {
-    image: './assets/images/slide4.jpg',
+    image: '/assets/images/slide4.jpg',
     title: 'Vivez l\'extraordinaire',
     subtitle: 'Découvrez les trésors cachés du monde avec une attention méticuleuse aux détails.'
   }

@@ -60,7 +60,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="about__image-modern"
           >
-            <img src="./assets/images/travel.jpg" alt="Road trip" />
+            <img src="/assets/images/travel.jpg" alt="Road trip" />
           </motion.div>
         </div>
       </section>
@@ -115,22 +115,22 @@ const Home = () => {
           </div>
           <div className="partners__grid-modern">
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Air Cote.png" alt="Air Côte d'Ivoire" />
+              <img src="/assets/logos/Air Cote.png" alt="Air Côte d'Ivoire" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.1 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Air Senegal.png" alt="Air Sénégal" />
+              <img src="/assets/logos/Air Senegal.png" alt="Air Sénégal" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Air_France-Logo.wine.svg" alt="Air France" />
+              <img src="/assets/logos/Air_France-Logo.wine.svg" alt="Air France" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Brussels_Airlines-Logo.wine.svg" alt="Brussels Airlines" />
+              <img src="/assets/logos/Brussels_Airlines-Logo.wine.svg" alt="Brussels Airlines" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.4 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Emirates_(airline)-Logo.wine.svg" alt="Emirates" />
+              <img src="/assets/logos/Emirates_(airline)-Logo.wine.svg" alt="Emirates" />
             </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} viewport={{ once: true }} className="partner-logo">
-              <img src="./assets/logos/Turkish_Airlines-Logo.wine.svg" alt="Turkish Airlines" />
+              <img src="/assets/logos/Turkish_Airlines-Logo.wine.svg" alt="Turkish Airlines" />
             </motion.div>
           </div>
         </div>
