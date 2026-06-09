@@ -1,9 +1,41 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, MessageSquare, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form.current);
+    const data = Object.fromEntries(formData.entries());
+
+    const subject = encodeURIComponent(`Nouveau Projet de Voyage - ${data.Nom} ${data.Prénom}`);
+    
+    const bodyText = `
+Détails du projet de voyage :
+---------------------------
+Nom : ${data.Nom}
+Prénom : ${data.Prénom}
+Email : ${data.Email}
+Téléphone : ${data.Téléphone}
+Pays : ${data.Pays}
+Destination : ${data.Destination}
+Dates : Du ${data.Date_Début} au ${data.Date_Fin}
+Voyageurs : ${data.Adultes} Adulte(s), ${data.Enfants} Enfant(s), ${data.Bébés} Bébé(s)
+
+Projet :
+${data.Message}
+    `;
+
+    const body = encodeURIComponent(bodyText);
+    
+    // Ouvre le client mail par défaut (Gmail, Outlook, etc.)
+    window.location.href = `mailto:info@kimyavoyages.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="contact-page-modern">
       <section className="contact-hero-modern">
@@ -61,74 +93,75 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               className="contact-form-card-modern"
             >
-              <form>
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className="form-grid-modern">
                   <div className="form-group-modern">
                     <label>Nom *</label>
-                    <input type="text" placeholder="Ex: KOUAKOU" required />
+                    <input type="text" name="Nom" placeholder="Ex: KOUAKOU" required />
                   </div>
                   <div className="form-group-modern">
                     <label>Prénom *</label>
-                    <input type="text" placeholder="Ex: Joel" required />
+                    <input type="text" name="Prénom" placeholder="Ex: Joel" required />
                   </div>
                 </div>
                 <div className="form-grid-modern">
                   <div className="form-group-modern">
                     <label>Adresse email *</label>
-                    <input type="email" placeholder="example@domain.com" required />
+                    <input type="email" name="Email" placeholder="example@domain.com" required />
                   </div>
                   <div className="form-group-modern">
                     <label>Téléphone</label>
-                    <input type="tel" placeholder="+225 07 07 07 07 07" />
+                    <input type="tel" name="Téléphone" placeholder="+225 07 07 07 07 07" />
                   </div>
                 </div>
                 <div className="form-grid-modern">
                   <div className="form-group-modern">
                     <label>Pays de résidence</label>
-                    <input type="text" placeholder="Votre pays de résidence" />
+                    <input type="text" name="Pays" placeholder="Votre pays de résidence" />
                   </div>
                   <div className="form-group-modern">
                     <label>Destination</label>
-                    <input type="text" placeholder="Où partez-vous ?" />
+                    <input type="text" name="Destination" placeholder="Où partez-vous ?" />
                   </div>
                 </div>
                 <div className="form-grid-modern">
                   <div className="form-group-modern">
                     <label>A partir de</label>
-                    <input type="date" />
+                    <input type="date" name="Date_Début" />
                   </div>
                   <div className="form-group-modern">
                     <label>Jusqu'au</label>
-                    <input type="date" />
+                    <input type="date" name="Date_Fin" />
                   </div>
                 </div>
                 <div className="form-grid-modern">
                   <div className="form-group-modern">
                     <label>Adultes *</label>
-                    <select required>
+                    <select name="Adultes" required>
                       <option value="">Sélectionnez</option>
                       {[1,2,3,4,5,6,7,8,9,10].map(n => <option key={n} value={n}>{n}</option>)}
                     </select>
                   </div>
                   <div className="form-group-modern">
                     <label>Enfants (-12ans)</label>
-                    <select>
-                      <option value="">Sélectionnez</option>
-                      {[0,1,2,3,4,5].map(n => <option key={n} value={n}>{n}</option>)}
+                    <select name="Enfants">
+                      <option value="0">Aucun</option>
+                      {[1,2,3,4,5].map(n => <option key={n} value={n}>{n}</option>)}
                     </select>
                   </div>
                   <div className="form-group-modern">
                     <label>Bébé (-02ans)</label>
-                    <select>
-                      <option value="">Sélectionnez</option>
-                      {[0,1,2,3,4,5].map(n => <option key={n} value={n}>{n}</option>)}
+                    <select name="Bébés">
+                      <option value="0">Aucun</option>
+                      {[1,2,3,4,5].map(n => <option key={n} value={n}>{n}</option>)}
                     </select>
                   </div>
                 </div>
                 <div className="form-group-modern">
                   <label>Décrivez votre projet *</label>
-                  <textarea rows="4" placeholder="Dites-nous le plus précisement possible : envies, itinéraires, étapes..." required></textarea>
+                  <textarea name="Message" rows="4" placeholder="Dites-nous le plus précisement possible : envies, itinéraires, étapes..." required></textarea>
                 </div>
+
                 <button type="submit" className="btn btn-primary w-full-modern">
                   Valider mon projet <Send size={18} />
                 </button>
