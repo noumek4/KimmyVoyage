@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 import './Hero.css';
@@ -65,8 +66,8 @@ const Hero = () => {
           <h1>{slides[current].title}</h1>
           <p>{slides[current].subtitle}</p>
           <div className="hero__btns-modern">
-            <a href="/nos-packages" className="btn btn-primary">Voir nos offres</a>
-            <a href="/contact" className="btn btn-outline-white-modern">Nous contacter</a>
+            <Link to="/nos-packages" className="btn btn-primary">Voir nos offres</Link>
+            <Link to="/contact" className="btn btn-outline-white-modern">Nous contacter</Link>
           </div>
           <div className="hero__signature">
             <span>{String(current + 1).padStart(2, '0')}</span>

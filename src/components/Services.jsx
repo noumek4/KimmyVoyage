@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Plane, Hotel, Car, Globe, ArrowUpRight, ShieldCheck, Zap } from 'lucide-react';
 import './Services.css';
@@ -80,9 +81,9 @@ const Services = () => {
               <div className="service-card__content-modern">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <a href="/nos-packages" className="service-card__link-modern">
+                <Link to="/nos-packages" className="service-card__link-modern">
                   Explorer <ArrowUpRight size={18} />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

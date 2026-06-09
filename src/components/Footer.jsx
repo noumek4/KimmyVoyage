@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { Send } from 'lucide-react';
 
@@ -30,10 +31,10 @@ const Footer = () => {
           <div className="footer__nav-modern">
             <h4>Explorer</h4>
             <ul>
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/notre-agence">L'Agence</a></li>
-              <li><a href="/nos-packages">Destinations</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/notre-agence">L'Agence</Link></li>
+              <li><Link to="/nos-packages">Destinations</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
