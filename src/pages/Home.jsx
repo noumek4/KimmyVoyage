@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, useSpring, useTransform, animate } from 'framer-motion';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -50,7 +51,7 @@ const Home = () => {
                 <p>Assistance</p>
               </div>
             </div>
-            <a href="/notre-agence" className="btn btn-primary">Découvrir notre histoire</a>
+            <Link to="/notre-agence" className="btn btn-primary">Découvrir notre histoire</Link>
           </motion.div>
           
           <motion.div 
@@ -147,7 +148,7 @@ const Home = () => {
           >
             <h2>Prêt pour l'aventure ?</h2>
             <p>Rejoignez des milliers de voyageurs qui nous font confiance pour leurs séjours les plus précieux.</p>
-            <a href="/contact" className="btn btn-accent">Planifier mon voyage</a>
+            <Link to="/contact" className="btn btn-accent">Planifier mon voyage</Link>
           </motion.div>
         </div>
       </section>
