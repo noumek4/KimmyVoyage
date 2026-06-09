@@ -16,7 +16,7 @@ const services = [
     title: "Hôtel",
     description: "Profitez d’un séjour confortable et relaxant avec nos réservations de chambres d’hôtels adaptées à votre budget.",
     icon: <Hotel size={32} />,
-    image: '/assets/images/hotel.jpg',
+    image: '/assets/images/Hotel.jpg',
     color: '#D59A00'
   },
   {
